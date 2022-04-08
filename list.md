@@ -141,3 +141,43 @@ print(poping(x))
 [1, 2, 3, 4, 5]
 ```
 Explanation:-
+
+## 7. How to get min Value from list without using `min()`  built-in function?
+algorithm:-
+```
+def min(array):
+    for i in range(length(array)):
+        for j in range(0, length(array)-1-i):
+            if array[j]>array[j+1]:
+                array[j], array[j+1] = array[j+1], array[j]
+    return array[0]
+
+# driver/explanation code
+x = [2, -2, 8, -8, 3, 7, 9]
+print(min(x))
+```
+<b>output</b>
+```
+-8
+
+```
+Expplanation :-
+## 8. How to get max Value from list without using `max()`  built-in function?
+Algorithm:-
+```
+def max(array):
+    for i in range(length(array)):
+        for j in range(0, length(array)-1-i):
+            if array[j]>array[j+1]:
+                array[j], array[j+1] = array[j+1], array[j]
+    return array[-1]
+
+# driver/explanation code
+x = [2, -2, 8, -8, 3, 7, 9]
+print(max(x))
+```
+<b>output</b>
+```
+9
+```
+Explanation:-
