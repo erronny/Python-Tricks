@@ -1,6 +1,6 @@
 # Python List Small Tricks For Begineers
 
-# 1. How to create own `len()` function for Python List?
+## 1. How to create own `len()` function for Python List?
 Algorithms
 1. create `counted_length` variable and store 0
 2. iterate through list for size of list times
@@ -31,7 +31,7 @@ print(length(d))
 ```
 
 
-# 2. How to create own `append` Function for Python List?
+## 2. How to create own `append` Function for Python List?
 
 Algorithm :- 
 1. First create empty list
@@ -40,20 +40,44 @@ Algorithm :-
 4. 4. If Size of new_array reached equal to array then add item. Break the loop
 
 ```
-def append(array, item):
+def appending(array, item):
     lst = []
-    for i in range(len(array)):
+    for i in range(length(array)):
         lst = lst + [array[i]]
         if len(lst) == len(array):
             lst = lst + [item]
     return lst
-  
- # Driver Code for test
-x = [1, 2, 3, 4, 5]
-print(append(x, 6))
+    
+ # driver/execution code
+x = [1, 2, 3, 4, 5, 6]
+print(appending(x, 6))
 ```
 Output
 ```
 [1, 2, 3, 4, 5, 6]
 ```
 Explanation : - 
+
+# How to create custom `insert()` function for python list?
+Algorithms:-
+
+```
+def inserting(array, index, item):
+    lst = []
+    for i in range(length(array)):
+        if i == index:
+            lst = lst + [item]
+            lst = lst + [array[i]]
+        else:
+            lst = lst + [array[i]]
+
+    return lst
+
+ # driver/execution code
+y = [1, 2, 4, 5]
+print(inserting(y, 2, 3))
+```
+### output
+```
+[1, 2, 3, 4, 5]
+```
