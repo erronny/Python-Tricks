@@ -58,7 +58,7 @@ Output
 ```
 Explanation : - 
 
-# How to create custom `insert()` function for python list?
+## 3. How to create custom `insert()` function for python list?
 Algorithms:-
 
 ```
@@ -77,7 +77,67 @@ def inserting(array, index, item):
 y = [1, 2, 4, 5]
 print(inserting(y, 2, 3))
 ```
-### output
+<b>output</b>
 ```
 [1, 2, 3, 4, 5]
 ```
+
+Explanation:-
+
+## 4. How to create Custom/Own `remove()` function for Python List?
+Algorithms:-
+
+```
+def removing(array, item):
+    lst = []
+    for i in range(length(array)):
+        if array[i] != item:
+            lst = lst + [array[i]]
+    return lst
+    
+# driver/ececution code
+z = [1, 2, 3, 4]
+print(removing(z, 4))
+```
+<b>output</b>
+```
+[1, 2, 3]
+```
+Explanation:-
+## 5. How to create Custom `reverse()` function for Python List?
+Algorithms:
+
+```
+def reverse(array):
+    lst  = []
+    for i in range(length(array)):
+        lst = lst + [array[length(array)-1-i]]
+    return lst
+
+# driver/execution code
+p = [1, 2, 3]
+print(reverse(p))
+```
+<b>output</b>
+```
+[3, 2, 1]
+```
+Explanation:-
+
+## 6. How to create Custom `poping'()` function for Python List?
+Algorithm:-
+```
+def poping(array):
+    lst = []
+    for i in range(length(array)-1):
+        lst = lst + [array[i]]
+    return lst
+# driver/execution code
+x = [1, 2, 3, 4, 5, 6]
+print(poping(x))
+```
+<b>output</b>
+```
+[1, 2, 3, 4, 5]
+```
+Explanation:-
