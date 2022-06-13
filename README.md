@@ -88,7 +88,36 @@ print(inserting(y, 2, 3))
 ```
 [1, 2, 3, 4, 5]
 ```
-
+# Another method if index is not given, item will be added at last. If Code didn't find index it behaves like append.
+```
+def inserting(array, item, index=None):
+    lst = []
+    for i in range(len(array)):
+        if i == index and index != None:
+            lst = lst +[item]
+            lst = lst + [array[i]]
+        elif index == None:
+            return array+[item]
+        else:
+            lst = lst + [array[i]]
+    return lst
+ # driver/execution code
+y = [1, 2, 4, 5]
+print(inserting(y, 3, 2))
+```
+<b>output</b>
+```
+[1, 2, 3, 4, 5]
+```
+<b>Input</b> if index is not given it behaves like append
+```
+y = [1, 2, 4, 5]
+print(inserting(y, 3))
+```
+<b>output</b>
+```
+[1, 2, 4, 5, 3]
+```
 Explanation:-
 
 ## 4. How to create Custom/Own `remove()` function for Python List?
